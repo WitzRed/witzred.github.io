@@ -57,6 +57,7 @@ p{
     background-size: cover;
 }
 
+.filterContainer,
 .header,
 .footer{
     margin-left: 5px;
