@@ -14,24 +14,27 @@
         </header>
         <div class="filterContainer">
             Portfolio 
-            <div class="portfolioFilter">
-                <button class="btn" onclick="filterSelection('*')"><b>ALL</b></button >
-                <button class="btn" onclick="filterSelection('3d-modeling')"><b>3D Modeling</b></button >
-                <button class="btn" onclick="filterSelection('robotics')"><b>Robotics</b></button >
-                <button class="btn" onclick="filterSelection('.machine-learning')"><b>Machine Learning</b></button >
+            <div class="portfolioFilter" id="portfolioFilter">
+                <!-- '3dm', 'ml', 'rb', 'td' -->
+                <button class="btn active" onclick="filterSelection('all')"><b>ALL</b></button >
+                <button class="btn" onclick="filterSelection('3dmd')"><b>3D Modeling</b></button >
+                <button class="btn" onclick="filterSelection('rb')"><b>Robotics</b></button >
+                <button class="btn" onclick="filterSelection('ml')"><b>Machine Learning</b></button >
+                <button class="btn" onclick="filterSelection('td')"><b>Technical Drawing</b></button >
             </div><!-- portfolioFilter -->
         </div>
-        <!-- <div class="panel ml" id="ml1">Panel A</div>
-        <div class="panel">Panel B</div>
-        <div class="panel tall-panel">Panel C</div>
-        <div class="panel">Panel D</div>
-        <div class="panel">Panel E</div>
-        <div class="panel">Panel F</div>
-        <div class="panel tall-panel">Panel G</div>
-        <div class="panel tall-panel">Panel H</div>
-        <div class="panel">Panel I</div>
-        <div class="panel">Panel J</div> -->
-        <!-- <footer class="footer">This is the Footer</footer> -->
+        <!-- <div class="panel ml">Machine Learning A</div>
+        <div class="panel ml">Machine Learning B</div>
+        <div class="panel ml higher-panel">Machine Learning C</div>
+        <div class="panel ml">Machine Learning D</div>
+        <div class="panel 3dmd">3D Modeling E</div>
+        <div class="panel 3dmd">3D Modeling F</div>
+        <div class="panel rb higher-panel">Robotics G</div>
+        <div class="panel rb higher-panel">Robotics H</div>
+        <div class="panel rb">Robotics I</div>
+        <div class="panel rb">Robotics J</div> 
+        <div class="panel td">Technical Drawing K</div>
+        <footer class="footer">This is the Footer</footer> -->
     </div>
     <script src="js/main.js"></script>
 </body>
