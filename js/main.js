@@ -2,10 +2,14 @@ const PATH = 'assets/img/portfolio';
 const OWNER = 'WitzRed';
 const REPO = 'witzred.github.io';
 
-
-// subdir = ['3dm', 'ml', 'rb', 'td'];
-
 portfolio = document.querySelector('.wrapper');
+
+function getRepoSchema(OWNER, REPO, PATH){
+    return fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`);
+}
+
+
+/* This is test for adding elments to the grid*/
 
 // subdir.forEach(element => {
 //     let divEl = document.createElement('div');
@@ -13,12 +17,7 @@ portfolio = document.querySelector('.wrapper');
 //     portfolio.appendChild(divEl);
 // });
 
-function getRepoSchema(OWNER, REPO, PATH){
-    return fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`);
-}
-
-
-
+// This is the expected array subdir = ['3dm', 'ml', 'rb', 'td'];
 async function FecthRepo(){
 
     getRepoSchema(OWNER, REPO, PATH)
